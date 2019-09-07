@@ -1,0 +1,52 @@
+<?php
+/**
+ * Export to PHP Array plugin for PHPMyAdmin
+ * @version 0.2b
+ */
+
+//
+// Database `e-commerce`
+//
+
+// `e-commerce`.`clients`
+$clients = array(
+  array('id_client' => '1','nomClient' => 'Koné Ibrahim','ville_client' => 'Kong','addresse_client' => 'kone.@gmail.com'),
+  array('id_client' => '2','nomClient' => 'Aya Luise','ville_client' => 'Bouaké','addresse_client' => 'aya32@gmail.com')
+);
+
+// `e-commerce`.`commandes`
+$commandes = array(
+  array('id_com' => '1','id_client' => '2','date_com' => '2019-09-05'),
+  array('id_com' => '2','id_client' => '1','date_com' => '2019-09-05')
+);
+
+// `e-commerce`.`femmes`
+$femmes = array(
+  array('id_prod' => '1','nomProd' => 'Bleu de charnel','marqProd' => 'Charnel','typeProd' => 'Parfum','prixProd' => '8000fcfa','Qstock' => '15','photo' => 'bleu-de-chanel'),
+  array('id_prod' => '2','nomProd' => 'Black opium','marqProd' => 'Black','typeProd' => 'Senteur','prixProd' => '8000fcfa','Qstock' => '5','photo' => 'black-opium.jpg')
+);
+
+// `e-commerce`.`hommes`
+$hommes = array(
+  array('id_prod' => '1','nomProd' => 'Adidas original','marqProd' => 'Adidas','typeProd' => 'Parfum','prixProd' => '8000fcfa','Qstock' => '3','photo' => 'adidas.jpg'),
+  array('id_prod' => '2','nomProd' => 'Yuri','marqProd' => 'Yuri','typeProd' => 'parfum','prixProd' => '1000fcfa','Qstock' => '20','photo' => 'yuri.png')
+);
+
+// `e-commerce`.`parfum`
+$parfum = array(
+  array('id' => '1','nomParf' => 'Matador','marqParf' => '','genre' => 'Homme','prixParf' => '2500fcfa','photo' => 'matador.jpg'),
+  array('id' => '2','nomParf' => 'Yuri','marqParf' => '','genre' => 'Femme','prixParf' => '1000 fcfa','photo' => 'yuri.png')
+);
+
+// `e-commerce`.`produits`
+$produits = array(
+  array('id' => '1','nomProduit' => 'club classe','marqProduit' => '','typeProduit' => 'parfum','prixProduit' => '8000 fcfa','detProduit' => 'Ajouter détaille...','photo' => 'classe.jpg'),
+  array('id' => '2','nomProduit' => 'Bleu charnel','marqProduit' => '','typeProduit' => 'senteur','prixProduit' => '8000fcfa','detProduit' => 'Ajouter détaille...','photo' => 'bleu-de-chanel.jpg')
+);
+
+// `e-commerce`.`senteur`
+$senteur = array(
+  array('id' => '1','nomSent' => 'Adidas officiel','marqSent' => 'Adidas','genre' => 'Homme','prixProduit' => '8000 fcfa','photo' => 'adidas.jpg'),
+  array('id' => '2','nomSent' => 'Black opium','marqSent' => '','genre' => 'Femme','prixProduit' => '6000fcfa','photo' => 'black_opium.jpg')
+);
+?>
